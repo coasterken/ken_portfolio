@@ -8,16 +8,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>About | Ken Thompson</title>
-  <!-- Latest compiled and minified CSS -->
+  <title>Ken Thompson</title>
+
+  <!-- Latest compiled and minified BootstrapCSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
     crossorigin="anonymous">
+  <!-- My style sheet  -->
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-
+  <!-- Font Awesome -->
+  <script src="https://use.fontawesome.com/94c07cb2c2.js"></script>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto+Slab|Roboto:300" rel="stylesheet">
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="#">Ken Thompson</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
       aria-expanded="false" aria-label="Toggle navigation">
@@ -27,50 +32,100 @@
     <div class="collapse navbar-collapse justify-content-end " id="navbarSupportedContent">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link firstHeader" href="index.html">About</a>
+          <a class="nav-link firstHeader" href="#home">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="portfolio.html">Portfolio</a>
+          <a class="nav-link" href="#about">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact</a>
+          <a class="nav-link" href="#portfolio">Portfolio</a>          
         </li>
       </ul>
     </div>
   </nav>
 
-  <div class="container">
-    <div class="row">
-      <div class="col-md-8">
-        <section class="leftSection">
-          <h2 class="leftSecHeader">About Me</h2>
+  <!-- <div class="container">
+    <div class="row image-row">
+      <div class="col-lg-12 ">
+        <img class="imgMe" src="assets/images/me_blue.jpg" alt="Me">
+        <img class="imgMe" src="assets/images/me_green.jpg" alt="Me">
+        <img class="imgMe" src="assets/images/me_pink.jpg" alt="Me">
+        <img class="imgMe" src="assets/images/me_yellow.jpg" alt="Me">
+      </div>
+    </div> -->
 
-          <img class="imgMe" src="assets/images/Me.jpg" alt="Me">
+  <!-- Main Page - calling it masthead -->
+  <div id="home" class="container">
+    <div class="row d-flex justify-content-lg-center">
+      <div class="col-lg-8 masthead">
+        <img class="img-fluid rounded-circle" src="assets/images/me_blue.jpg" alt="Me">
+        <div class="intro-text">
+          <!-- <span class="name">Start Bootstrap</span> -->
+          <hr>
+          <span class="skills">Full Stack Web Developer | Technical Business Analyst</span>
+        </div>
+        <div class="row d-flex justify-content-lg-center">
+          <div class="col-lg-5">
+            <section class="connectSection d-flex justify-content-between">
+              <a href="https://github.com/coasterken" title="coasterken on GitHub" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+              <a href="https://www.linkedin.com/in/kennethrthompson/" title="kennethrthompson on LinkedIn" target="_blank"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+              <a href="https://www.twitter.com/dancethismess" title="@dancethismess on Twitter" target="_blank"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i>  </a>
+              <a href="mailto:ken.r.thompson@icloud.com" title="Email ken.r.thompson@icloud.com" target="_blank"><i class="fa fa-envelope fa-2x"  aria-hidden="true"></i></i>  </a>
+              <!-- <a href="https://stackoverflow.com/users/8295550/k-thompson" target="_blank"><img class="imgSocial" src="assets/images/stoverflow.png" alt="Stack Overflow"></a> -->
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-          <p class="meText"> I live in South End Charlotte, NC and am currently attending UNCC's Full Stack Developer Boot Camp. I have worked
+  <!-- ME section -->
+  <div id="about" class="container">
+    <div class="row justify-content-lg-center">
+      <div class="col-lg-12">
+        <section class="meSection">
+          <p> I live in South End Charlotte, NC and am currently attending UNCC's Full Stack Developer Boot Camp. I have worked
             as both a software developer and, most recently, a technical business analyst. I am very excited about the switch
             back to the world of development. I have not decided if I am a front end or back end developer.
           </p>
 
-          <p class="meText">
+          <p>
             For fun, I love to ride roller coasters. My coaster count is 322. I also enjoy EDM and Alternative music. My current music
             goal is to collect 50's and 60's cocktail tunes.
           </p>
         </section>
-
-        <div class="row">
-        </div>
       </div>
+    </div>
+  </div>
 
-      <div class="col-md-4">
-        <!-- The connect with me section -->
-        <section class="rightSection">
-          <h2 class="rightSecHeader">Connect with Me</h2>
-          <section>
-            <a href="https://github.com/coasterken" target="_blank"><img class="imgSocial" src="assets/images/github.png" alt="GitHub"></a>
-            <a href="https://www.linkedin.com/in/kennethrthompson/" target="_blank"><img class="imgSocial" src="assets/images/linkedin.png" alt="linkedin"></a>
-            <a href="https://stackoverflow.com/users/8295550/k-thompson" target="_blank"><img class="imgSocial" src="assets/images/stoverflow.png" alt="Stack Overflow"></a>
-          </section>
+  <!-- Portfolio section -->
+  <div id="portfolio" class="container">
+    <div class="row justify-content-lg-center">
+      <div class="col-lg-12">
+        <section class="portSection">
+          <div class="portImg">
+            <a class="portLinks" href="https://github.com/coasterken" target="_blank"><img src="assets/images/transport.jpg" alt="transportation">
+              </a>
+            <p class="portTxt">transportation</p>
+          </div>
+
+          <div class="portImg">
+            <a class="portLinks" href="https://github.com/coasterken" target="_blank"><img src="assets/images/nature.jpg" alt="nature">
+              </a>
+            <p class="portTxt">nature</p>
+          </div>
+
+          <div class="portImg">
+            <a class="portLinks" href="https://github.com/coasterken" target="_blank"><img src="assets/images/food.jpg" alt="food">
+               </a>
+            <p class="portTxt">food</p>
+          </div>
+
+          <div class="portImg">
+            <a class="portLinks" href="https://github.com/coasterken" target="_blank"><img src="assets/images/edm.jpg" alt="edm">
+              </a>
+            <p class="portTxt">edm</p>
+          </div>
         </section>
       </div>
     </div>
