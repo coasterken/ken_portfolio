@@ -1,5 +1,6 @@
 /* Style sheet for homework 1 - recommended project*/
 
+
 /*
 Teal color (used for headings and backgrounds): #4aaaa5
 Regular font color (used for paragraphs and all text besides the headings): #777777
@@ -16,6 +17,7 @@ The entire content area is 960px wide.
 The main section content is 650px wide.
 The sidebar is 270px wide.
 */
+
 * {
   box-sizing: border-box;
 }
@@ -35,19 +37,27 @@ body {
 
 .container {
   width: 100%;
-  max-width: 1200px;
-  height: 1000px;
+  height: 500px;
   margin: 0 auto;
   clear: both;
 }
 
-div.masthead,
-.meSection,
-.portSection {
+#home,
+#about,
+#portfolio {
   padding-top: 100px;
   padding-bottom: 100px;
   text-align: center;
   color: white;
+}
+
+#about {
+  background: linen;
+  color: black;
+}
+
+.meSection {
+  padding-top: 50px;
 }
 
 div.masthead img {
@@ -61,8 +71,8 @@ div.masthead img {
   color: lightslategray;
 }
 
-.intro-text{
-   margin: 0px 0px 30px 0px;
+.intro-text {
+  margin: 0px 0px 30px 0px;
 }
 
 .skills {
@@ -72,53 +82,33 @@ div.masthead img {
 
 hr {
   border: 1px solid lightslategray;
-  margin: 20px auto;
+  margin: 30px auto;
 }
 
 
 /*************** End of Header Section ************/
 
+
 /*  The bottom Section   */
 
-.myfooter {
-	clear: both; 
-	background-color: #666666;
-  text-align: center;
-	border-width: 8px 0px 0px 0px	;
-	border-style: solid;
-	border-color: #4aaaa5;
-	width: 100%;
-	height: 70px;
-	font-family: 'Georgia', Times, Times New Roman, serif;
-	font-size: 	15px;
-	padding-top: 20px;
-	color: #fff;
+footer {
+  color: white;
+  padding-top: 50px;
+  background-color: #2C3E50;
 }
 
-
-
-#message {
-    /*height: 100px;*/
-    padding: 0 0 80px 0;
-   /* line-height: 0%;*/
+footer .container {
+  height: 50%;
 }
 
-
-input[type=submit] {
-    width: 30%;
-    background-color: #4aaaa5;
-    color: white;
-    padding: 14px 20px;
-    margin: 20px 30px;
-    border: none;
-    /*border-radius: 4px;*/
-    cursor: pointer;
+footer .footer-col {
+  margin-bottom: 10px;
 }
 
 .portImg {
-	position: relative;
-	float: left;
-	width: 200px;
+  position: relative;
+  float: left;
+  width: 200px;
   margin: 20px 20px 0px 0px;
   overflow: auto;
 }
@@ -132,26 +122,31 @@ input[type=submit] {
 }
 
 .portTxt {
-	position: absolute;
+  position: absolute;
   bottom: 0px;
-	width: 100%;
+  width: 100%;
   background-color: #4aaaa5;
   color: white;
   padding: 14px 0px;
   text-align: center;
 }
 
+
 /**************    Responsive Code     **************/
 
+
 /*  desktop   */
-@media screen and (max-width: 980px) {
+
+
+/* @media screen and (max-width: 980px) {
   
 .rightSection{
     float: left;
     margin-left: 10px;
-  }
+  } */
 
-  /*
+
+/*
   .headerNav {
   float: left;
 
@@ -178,9 +173,11 @@ input[type=submit] {
 
 }  /*  END OF DESKTOP */
 
+
 /*  tablet   */
 
-@media screen and (max-width: 768px) {
+
+/* @media screen and (max-width: 768px) {
  
 .rightSection{
     clear:both;
@@ -190,8 +187,10 @@ input[type=submit] {
     margin-top: 0px;
     margin-left: 0px;
   }
-}
- /*
+} */
+
+
+/*
   .leftSection {
     max-width: 650px;
   }
@@ -227,8 +226,9 @@ input[type=submit] {
 
 
 /*   Media Queries     */
-/*   phone landscape    */
-@media screen and (max-width: 640px) {
+
+
+/* @media screen and (max-width: 640px) {
 
   .name {
     width: 100%;
@@ -241,9 +241,6 @@ input[type=submit] {
     clear: both;
     float: left;
     background-color: #ffffff;
-/*    border-bottom: 2px;
-    border-style: solid;
-    border-color: #cccccc;*/
     color: #fff;
     margin: 0 auto;
     padding: 10px 0px 10px 0px;
@@ -259,8 +256,10 @@ input[type=submit] {
     float:left;
     max-width: 320px;
   }
-}
-   /* 
+} */
+
+
+/* 
   body {
     padding-top: 0px;
   }
@@ -284,6 +283,7 @@ input[type=submit] {
   .rightSecHeader {
     max-width: 280px; 
   }*/
+
 
 /*  p {
     display: block;
