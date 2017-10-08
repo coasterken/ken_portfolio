@@ -21,8 +21,8 @@
   <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto+Slab|Roboto:300" rel="stylesheet">
 </head>
 
-<body>
-  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+<body data-spy="scroll"  data-target="#navbarSupportedContent">
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark" id="portfolio-navbar">
     <a class="navbar-brand" href="#">Ken Thompson</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,7 +30,7 @@
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
+        <ul class="nav navbar-nav ml-auto">
           <li class="nav-item">
             <a class="nav-link" href="#home">Home</a>
           </li>
@@ -44,85 +44,87 @@
     </div>
   </nav>
 
-  <!-- Main Page - calling it masthead -->
-  <div id="home">
-    <div class="container">
-      <div class="row d-flex justify-content-lg-center">
-        <div class="col-lg-8 masthead">
-          <img class="img-fluid rounded-circle" src="assets/images/me_blue.jpg" alt="Me">
-          <div class="intro-text">
-            <!-- <span class="name">Start Bootstrap</span> -->
-            <hr>
-            <span class="skills">Full Stack Web Developer | Technical Business Analyst</span>
-          </div>
-          <div class="row d-flex justify-content-lg-center">
-            <div class="col-lg-5">
-              <section class="connectSection d-flex justify-content-between">
-                <a href="https://github.com/coasterken" title="coasterken on GitHub" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
-                <a href="https://www.linkedin.com/in/kennethrthompson/" title="kennethrthompson on LinkedIn" target="_blank"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
-                <a href="https://www.twitter.com/dancethismess" title="@dancethismess on Twitter" target="_blank"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i>  </a>
-                <a href="mailto:ken.r.thompson@icloud.com" title="Email ken.r.thompson@icloud.com" target="_blank"><i class="fa fa-envelope fa-2x"  aria-hidden="true"></i></i>  </a>
-                <!-- <a href="https://stackoverflow.com/users/8295550/k-thompson" target="_blank"><img class="imgSocial" src="assets/images/stoverflow.png" alt="Stack Overflow"></a> -->
-              </section>
+<div data-spy="scroll" data-target="#navbarSupportedContent" data-offset="0">  
+    <!-- Main Page - calling it masthead -->
+    <div id="home">
+      <div class="container">
+        <div class="row d-flex justify-content-lg-center">
+          <div class="col-lg-8 masthead">
+            <img class="img-fluid rounded-circle" src="assets/images/me_blue.jpg" alt="Me">
+            <div class="intro-text">
+              <!-- <span class="name">Start Bootstrap</span> -->
+              <hr>
+              <span class="skills">Full Stack Web Developer | Technical Business Analyst</span>
+            </div>
+            <div class="row d-flex justify-content-lg-center">
+              <div class="col-lg-5">
+                <section class="connectSection d-flex justify-content-between">
+                  <a href="https://github.com/coasterken" title="coasterken on GitHub" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+                  <a href="https://www.linkedin.com/in/kennethrthompson/" title="kennethrthompson on LinkedIn" target="_blank"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+                  <a href="https://www.twitter.com/dancethismess" title="@dancethismess on Twitter" target="_blank"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i>  </a>
+                  <a href="mailto:ken.r.thompson@icloud.com" title="Email ken.r.thompson@icloud.com" target="_blank"><i class="fa fa-envelope fa-2x"  aria-hidden="true"></i>  </a>
+                  <!-- <a href="https://stackoverflow.com/users/8295550/k-thompson" target="_blank"><img class="imgSocial" src="assets/images/stoverflow.png" alt="Stack Overflow"></a> -->
+                </section>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- ME section -->
-  <div id="about">
-    <div class="container">
-      <div class="row meRow justify-content-lg-center">
-        <div class="col-lg-12 align-self-center">
-          <section class="meSection">
-            <p>Ken is a full stack web developer and a technical business analyst. </p>
-            <p>He knows what it takes to transform an idea into a reality - from analysis and design to coding, testing, and
-              deployment.
-            </p>
-            <p>He has IT experience in telecommunications, big-box retail, education, and background/employment/drug screening.</p>
-            <p>Ken knows that tech makes everyone’s life better. There is nothing more satisfying than a happy user!</p>
-          </section>
+    <!-- ME section -->
+    <div id="about">
+      <div class="container">
+        <div class="row meRow justify-content-lg-center">
+          <div class="col-lg-12 align-self-center">
+            <section class="meSection">
+              <p>Ken is a full stack web developer and a technical business analyst. </p>
+              <p>He knows what it takes to transform an idea into a reality - from analysis and design to coding, testing, and
+                deployment.
+              </p>
+              <p>He has IT experience in telecommunications, big-box retail, education, and background/employment/drug screening.</p>
+              <p>Ken knows that tech makes everyone’s life better. There is nothing more satisfying than a happy user!</p>
+            </section>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- Portfolio section -->
-  <div id="portfolio">
-    <div class="container">
-      <div class="row justify-content-lg-center">
-        <div class="col-lg-12">
-          <section class="portSection">
-            <div class="portImg">
-              <a class="portLinks" href="https://github.com/coasterken" target="_blank"><img src="assets/images/transport.jpg" alt="transportation">
-              </a>
-              <p class="portTxt">transportation</p>
-            </div>
+    <!-- Portfolio section -->
+    <div id="portfolio">
+      <div class="container">
+        <div class="row justify-content-lg-center">
+          <div class="col-lg-12">
+            <section class="portSection">
+              <div class="portImg">
+                <a class="portLinks" href="https://github.com/coasterken" target="_blank"><img src="assets/images/transport.jpg" alt="transportation">
+                </a>
+                <p class="portTxt">transportation</p>
+              </div>
 
-            <div class="portImg">
-              <a class="portLinks" href="https://github.com/coasterken" target="_blank"><img src="assets/images/nature.jpg" alt="nature">
-              </a>
-              <p class="portTxt">nature</p>
-            </div>
+              <div class="portImg">
+                <a class="portLinks" href="https://github.com/coasterken" target="_blank"><img src="assets/images/nature.jpg" alt="nature">
+                </a>
+                <p class="portTxt">nature</p>
+              </div>
 
-            <div class="portImg">
-              <a class="portLinks" href="https://github.com/coasterken" target="_blank"><img src="assets/images/food.jpg" alt="food">
-               </a>
-              <p class="portTxt">food</p>
-            </div>
+              <div class="portImg">
+                <a class="portLinks" href="https://github.com/coasterken" target="_blank"><img src="assets/images/food.jpg" alt="food">
+                </a>
+                <p class="portTxt">food</p>
+              </div>
 
-            <div class="portImg">
-              <a class="portLinks" href="https://github.com/coasterken" target="_blank"><img src="assets/images/edm.jpg" alt="edm">
-              </a>
-              <p class="portTxt">edm</p>
-            </div>
-          </section>
+              <div class="portImg">
+                <a class="portLinks" href="https://github.com/coasterken" target="_blank"><img src="assets/images/edm.jpg" alt="edm">
+                </a>
+                <p class="portTxt">edm</p>
+              </div>
+            </section>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+</div>
 
   <!-- Footer -->
   <footer class="text-center">
@@ -146,7 +148,7 @@
   </footer>
 
   <!-- Gots to have these for some bootstrap stuff to work -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
     crossorigin="anonymous"></script>
