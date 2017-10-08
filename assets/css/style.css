@@ -43,7 +43,7 @@ body {
 
 /* remove the first separator */
 
-nav .navbar-nav.ul a:first-child {
+  li:nth-child(1) {
   border-left: 0 none;
 }
 
